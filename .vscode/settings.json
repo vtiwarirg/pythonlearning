@@ -1,0 +1,12 @@
+{
+  "editor.minimap.enabled": false,
+  "python.defaultInterpreterPath": "C:/Python313/python.exe",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.terminal.activateEnvironment": true
+}
