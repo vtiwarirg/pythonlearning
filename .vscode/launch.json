@@ -5,7 +5,10 @@
       "name": "Python: Current File",
       "type": "debugpy",
       "request": "launch",
-      "program": "${file}"
+      "program": "${file}",
+      "python": "${command:python.interpreterPath}",
+      "console": "integratedTerminal",
+      "justMyCode": true
     }
   ]
 }
