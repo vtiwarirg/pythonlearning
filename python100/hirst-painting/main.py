@@ -1,12 +1,12 @@
 # import os
 # import colorgram
 
-# if not os.path.exists(r"D:\pythonlearning\PYthon100\hirst-painting\hirstImage.jpg"):
-#     print("Error: hirstImage.jpg not found in the current directory.")
+# if not os.path.exists(r"D:\pythonlearning\PYthon100\hirst-painting\image.jpg"):
+#     print("Error: image.jpg not found in the current directory.")
 # else:
 #     rgb_colors = []
 #     colors = colorgram.extract(
-#         r"D:\pythonlearning\PYthon100\hirst-painting\hirstImage.jpg", 30
+#         r"D:\pythonlearning\PYthon100\hirst-painting\image.jpg", 30
 #     )
 #     for color in colors:
 #         r = color.rgb.r
@@ -15,6 +15,7 @@
 #         new_color = (r, g, b)
 #         rgb_colors.append(new_color)
 #     print(rgb_colors)
+
 import turtle as t
 import random
 
@@ -23,38 +24,7 @@ tim = t.Turtle()
 tim.speed("fastest")
 tim.penup()
 tim.hideturtle()
-color_list = [
-    (211, 210, 210),
-    (189, 167, 121),
-    (57, 90, 111),
-    (113, 43, 35),
-    (163, 89, 64),
-    (210, 212, 214),
-    (208, 211, 208),
-    (211, 209, 210),
-    (64, 43, 43),
-    (171, 183, 170),
-    (136, 149, 69),
-    (127, 160, 172),
-    (101, 79, 89),
-    (83, 133, 108),
-    (108, 39, 44),
-    (39, 61, 47),
-    (45, 40, 41),
-    (211, 196, 124),
-    (174, 150, 152),
-    (36, 71, 88),
-    (179, 106, 80),
-    (36, 67, 84),
-    (207, 185, 181),
-    (99, 140, 119),
-    (184, 198, 181),
-    (148, 116, 120),
-    (204, 183, 186),
-    (180, 195, 200),
-    (53, 69, 59),
-    (122, 129, 135),
-]
+color_list = [(205, 218, 239), (151, 162, 174), (180, 155, 138), (117, 100, 91), (94, 103, 113), (107, 95, 99), (174, 154, 159), (36, 43, 58), (91, 113, 106), (221, 203, 191), (180, 190, 208), (112, 127, 149), (134, 158, 153), (57, 46, 51), (148, 119, 113), (60, 45, 41), (212, 201, 207), (218, 190, 158), (53, 61, 81), (93, 146, 135), (151, 114, 120), (150, 128, 98), (203, 184, 188), (82, 55, 51), (45, 56, 53), (98, 141, 147), (77, 56, 61), (180, 195, 200), (207, 185, 179), (216, 229, 227)]
 
 tim.setheading(225)
 tim.forward(300)
