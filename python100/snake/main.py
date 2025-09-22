@@ -21,7 +21,7 @@ screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
 
 game_is_on = True
-game_speed = 0.5  # Starting speed
+game_speed = 0.1  # Starting speed
 while game_is_on:
     screen.update()
     time.sleep(game_speed)
@@ -34,14 +34,14 @@ while game_is_on:
         # if game_speed > 0.05:  # Minimum speed limit
         #     game_speed -= 0.005  # Speed up by reducing sleep time
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-        game_is_on = False
-        scoreboard.game_over()
+        scoreboard.reset()
+        snake.reset()
 
     # Check for collision with tail
     for segment in snake.segments[1:]: # skip the head
         if snake.head.distance(segment) < 10:
-            game_is_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
             break
 
 screen.exitonclick()
